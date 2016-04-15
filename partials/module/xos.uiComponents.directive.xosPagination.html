@@ -1,0 +1,57 @@
+<h1><code ng:non-bindable="">xosPagination</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xospagination-page"><p>The xos-table directive</p>
+</div></div>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;xos-pagination
+       page-size="{Number}"
+       total-elements="{Number}"
+       change="{Function}"&gt;
+&lt;/xos-pagination&gt;</pre>
+<h3 id="usage_directive-info">Directive info</h3>
+<div class="directive-info"><ul><li>This directive creates new scope.</li>
+</ul>
+</div>
+<h4 id="usage_directive-info_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>pageSize</td><td><a href="" class="label type-hint type-hint-number">Number</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xospagination-page"><p>Number of elements per page</p>
+</div></td></tr><tr><td>totalElements</td><td><a href="" class="label type-hint type-hint-number">Number</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xospagination-page"><p>Number of total elements in the collection</p>
+</div></td></tr><tr><td>change</td><td><a href="" class="label type-hint type-hint-function">Function</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xospagination-page"><p>The callback to be triggered on page change.</p>
+<ul>
+<li>@element ANY</li>
+</ul>
+</div></td></tr></tbody></table></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xospagination-page"><h4 id="example_source">Source</h4>
+<div source-edit="samplePagination" source-edit-deps="angular.js script.js" source-edit-html="index.html-348" source-edit-css="" source-edit-js="script.js-349" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-348" ng-html-wrap-loaded="samplePagination angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-348">
+  <div ng-controller="SampleCtrl1 as vm">
+    <xos-pagination
+      page-size="vm.pageSize"
+      total-elements="vm.totalElements"
+      change="vm.change">
+    </xos-pagination>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-349"></pre>
+<script type="text/ng-template" id="script.js-349">
+  angular.module('samplePagination', ['xos.uiComponents'])
+  .controller('SampleCtrl1', function(){
+    this.pageSize = 10;
+    this.totalElements = 35;
+    this.change = (pageNumber) => {
+      console.log(pageNumber);
+    }
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="samplePagination" ng-set-html="index.html-348" ng-eval-javascript="script.js-349"></div>
+</div></div>
+</div>

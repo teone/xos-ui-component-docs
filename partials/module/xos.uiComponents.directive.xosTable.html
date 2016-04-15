@@ -1,0 +1,197 @@
+<h1><code ng:non-bindable="">xosTable</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xostable-page"><p>The xos-table directive</p>
+</div></div>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;xos-table
+       config="{Object}"
+       data="{Array}"&gt;
+&lt;/xos-table&gt;</pre>
+<h3 id="usage_directive-info">Directive info</h3>
+<div class="directive-info"><ul><li>This directive creates new scope.</li>
+</ul>
+</div>
+<h4 id="usage_directive-info_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>config</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xostable-page"><p>The configuration for the component.</p>
+<pre><code>{
+  columns: [
+    {
+      label: &#39;Human readable name&#39;,
+      prop: &#39;Property to read in the model object&#39;
+    }
+  ],
+  classes: &#39;table table-striped table-bordered&#39;,
+  actions: [ // if defined add an action column
+          {
+            label: &#39;delete&#39;,
+            icon: &#39;remove&#39;, // refers to bootstraps glyphicon
+            cb: (user) =&gt; { // receive the model
+              console.log(user);
+            },
+            color: &#39;red&#39;
+          }
+        ],
+        filter: &#39;field&#39;, // can be by `field` or `fulltext`
+        order: true // whether to show ordering arrows
+}
+</code></pre></div></td></tr><tr><td>data</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xostable-page"><p>The data that should be rendered</p>
+</div></td></tr></tbody></table></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xostable-page"><h4 id="example_source">Source</h4>
+<div source-edit="sampleTable1" source-edit-deps="angular.js script.js" source-edit-html="index.html-350" source-edit-css="" source-edit-js="script.js-351" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-350" ng-html-wrap-loaded="sampleTable1 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-350">
+  <div ng-controller="SampleCtrl1 as vm">
+    <xos-table data="vm.data" config="vm.config"></xos-table>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-351"></pre>
+<script type="text/ng-template" id="script.js-351">
+  angular.module('sampleTable1', ['xos.uiComponents'])
+  .controller('SampleCtrl1', function(){
+    this.config = {
+      columns: [
+        {
+          label: 'First Name', // column title
+          prop: 'name' // property to read in the data array
+        },
+        {
+          label: 'Last Name',
+          prop: 'lastname'
+        }
+      ]
+    };
+
+    this.data = [
+      {
+        name: 'John',
+        lastname: 'Doe'
+      },
+      {
+        name: 'Gili',
+        lastname: 'Fereydoun'
+      }
+    ]
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable1" ng-set-html="index.html-350" ng-eval-javascript="script.js-351"></div>
+<h4 id="example_source">Source</h4>
+<div source-edit="sampleTable2" source-edit-deps="angular.js script.js" source-edit-html="index.html-352" source-edit-css="" source-edit-js="script.js-353" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-352" ng-html-wrap-loaded="sampleTable2 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-352">
+  <div ng-controller="SampleCtrl2 as vm">
+    <xos-table data="vm.data" config="vm.config"></xos-table>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-353"></pre>
+<script type="text/ng-template" id="script.js-353">
+  angular.module('sampleTable2', ['xos.uiComponents'])
+  .controller('SampleCtrl2', function(){
+    this.config = {
+      columns: [
+        {
+          label: 'First Name', // column title
+          prop: 'name' // property to read in the data array
+        },
+        {
+          label: 'Last Name',
+          prop: 'lastname'
+        }
+      ],
+      classes: 'table table-striped table-condensed', // table classes, default to `table table-striped table-bordered`
+      actions: [ // if defined add an action column
+        {
+          label: 'delete', // label
+          icon: 'remove', // icons, refers to bootstraps glyphicon
+          cb: (user) => { // callback, get feeded with the full object
+            console.log(user);
+          },
+          color: 'red' // icon color
+        }
+      ],
+      filter: 'field', // can be by `field` or `fulltext`
+      order: true
+    };
+
+    this.data = [
+      {
+        name: 'John',
+        lastname: 'Doe'
+      },
+      {
+        name: 'Gili',
+        lastname: 'Fereydoun'
+      }
+    ]
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable2" ng-set-html="index.html-352" ng-eval-javascript="script.js-353"></div>
+<h4 id="example_source">Source</h4>
+<div source-edit="sampleTable3" source-edit-deps="angular.js script.js" source-edit-html="index.html-354" source-edit-css="" source-edit-js="script.js-355" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-354" ng-html-wrap-loaded="sampleTable3 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-354">
+  <div ng-controller="SampleCtrl3 as vm">
+    <xos-table data="vm.data" config="vm.config"></xos-table>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-355"></pre>
+<script type="text/ng-template" id="script.js-355">
+  angular.module('sampleTable3', ['xos.uiComponents'])
+  .controller('SampleCtrl3', function(){
+    this.config = {
+      columns: [
+        {
+          label: 'First Name', // column title
+          prop: 'name' // property to read in the data array
+        },
+        {
+          label: 'Last Name',
+          prop: 'lastname'
+        }
+      ],
+      pagination: {
+        pageSize: 2
+      }
+    };
+
+    this.data = [
+      {
+        name: 'John',
+        lastname: 'Doe'
+      },
+      {
+        name: 'Gili',
+        lastname: 'Fereydoun'
+      },
+      {
+        name: 'Lucky',
+        lastname: 'Clarkson'
+      },
+      {
+        name: 'Tate',
+        lastname: 'Spalding'
+      }
+    ]
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable3" ng-set-html="index.html-354" ng-eval-javascript="script.js-355"></div>
+</div></div>
+</div>
