@@ -2,8 +2,8 @@ cp -R ../xos/views/ngXosLib/docs/ .
 cp ../xos/xos/core/xoslib/static/js/vendor/ngXosHelpers.js ./xos/core/xoslib/static/js/vendor/ngXosHelpers.js
 cp ../xos/xos/core/static/xosNgLib.css  ./xos/core/static/xosNgLib.css
 
-#sed s%../xos/core/xoslib/static/js/vendor/ngXosHelpers.js%xos/core/xoslib/static/js/vendor/ngXosHelpers.js% <index.html >index.html
-#sed s%../xos/core/static/xosNgLib.css%xos/core/static/xosNgLib.css% <index.html >index.html
+sed -i '' 's%\.\./xos/core/xoslib/static/js/vendor/ngXosHelpers.js%xos/core/xoslib/static/js/vendor/ngXosHelpers.js%g' index.html
+sed -i '' 's%../xos/core/static/xosNgLib.css%xos/core/static/xosNgLib.css%g' index.html
 
 git status
 
