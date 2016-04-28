@@ -46,8 +46,8 @@ NG_DOCS={
       "shortName": "xos.uiComponents",
       "type": "overview",
       "moduleName": "xos.uiComponents",
-      "shortDescription": "A collection of UI components useful for Dashboard development",
-      "keywords": "collection components dashboard development module overview ui uicomponents xos"
+      "shortDescription": "A collection of UI components useful for Dashboard development.",
+      "keywords": "collection components currently dashboard development directive module overview ui uicomponents xos"
     },
     {
       "section": "module",
