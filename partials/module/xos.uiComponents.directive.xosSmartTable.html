@@ -1,0 +1,81 @@
+<h1><code ng:non-bindable="">xosSmartTable</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmarttable-page"><p>The xos-table directive</p>
+</div></div>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;xos-smart-table
+       config="{Object}"&gt;
+&lt;/xos-smart-table&gt;</pre>
+<h3 id="usage_directive-info">Directive info</h3>
+<div class="directive-info"><ul><li>This directive creates new scope.</li>
+</ul>
+</div>
+<h4 id="usage_directive-info_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>config</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmarttable-page"><p>The configuration for the component,
+it is composed by the name of an angular <a href="https://docs.angularjs.org/api/ngResource/service/$resource">$resource</a>
+and an array of fields that shouldn&#39;t be printed.</p>
+<pre><code>{
+        resource: &#39;Users&#39;,
+        hiddenFields: []
+      }
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmarttable-page"><h4 id="example_source">Source</h4>
+<div source-edit="sampleSmartTable" source-edit-deps="angular.js script.js" source-edit-html="index.html-1130" source-edit-css="" source-edit-js="script.js-1131" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-1130" ng-html-wrap-loaded="sampleSmartTable angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1130">
+  <div ng-controller="SampleCtrl as vm">
+    <xos-smart-table config="vm.config"></xos-smart-table>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-1131"></pre>
+<script type="text/ng-template" id="script.js-1131">
+  angular.module('sampleSmartTable', ['xos.uiComponents', 'ngResource', 'ngMockE2E'])
+  // This is only for documentation purpose
+  .run(function($httpBackend, _){
+    let datas = [{id: 1, name: 'Jhon', surname: 'Doe'}];
+    let count = 1;
+
+    let paramsUrl = new RegExp(/\/test\/(.+)/);
+
+    $httpBackend.whenDELETE(paramsUrl, undefined, ['id']).respond((method, url, data, headers, params) => {
+      data = angular.fromJson(data);
+      let id = url.match(paramsUrl)[1];
+      _.remove(datas, (d) => {
+        return d.id === parseInt(id);
+      })
+      return [204];
+    });
+
+    $httpBackend.whenGET('/test').respond(200, datas)
+    $httpBackend.whenPOST('/test').respond((method, url, data) => {
+      data = angular.fromJson(data);
+      data.id = ++count;
+      datas.push(data);
+      return [201, data, {}];
+    });
+  })
+  .factory('_', function($window){
+    return $window._;
+  })
+  .service('SampleResource', function($resource){
+    return $resource('/test/:id', {id: '@id'});
+  })
+  // End of documentation purpose, example start
+  .controller('SampleCtrl', function(){
+    this.config = {
+      resource: 'SampleResource'
+    };
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartTable" ng-set-html="index.html-1130" ng-eval-javascript="script.js-1131"></div>
+</div></div>
+</div>

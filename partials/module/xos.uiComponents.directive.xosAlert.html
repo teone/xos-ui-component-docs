@@ -25,10 +25,10 @@
 </div></td></tr></tbody></table></div>
 <h2 id="example">Example</h2>
 <div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xosalert-page"><h4 id="example_source">Source</h4>
-<div source-edit="sampleAlert1" source-edit-deps="angular.js script.js" source-edit-html="index.html" source-edit-css="" source-edit-js="script.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleAlert1" source-edit-deps="angular.js script.js" source-edit-html="index.html-1114" source-edit-css="" source-edit-js="script.js-1115" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html" ng-html-wrap-loaded="sampleAlert1 angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-1114" ng-html-wrap-loaded="sampleAlert1 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1114">
   <div ng-controller="SampleCtrl1 as vm">
     <xos-alert config="vm.config1">
       A sample alert message
@@ -49,8 +49,8 @@
 </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js"></pre>
-<script type="text/ng-template" id="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-1115"></pre>
+<script type="text/ng-template" id="script.js-1115">
   angular.module('sampleAlert1', ['xos.uiComponents'])
   .controller('SampleCtrl1', function(){
     this.config1 = {
@@ -77,12 +77,12 @@
 </script>
 </div>
 </div><h4 id="example_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleAlert1" ng-set-html="index.html" ng-eval-javascript="script.js"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleAlert1" ng-set-html="index.html-1114" ng-eval-javascript="script.js-1115"></div>
 <h4 id="example_source">Source</h4>
-<div source-edit="sampleAlert2" source-edit-deps="angular.js script.js" source-edit-html="index.html-0" source-edit-css="" source-edit-js="script.js-1" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleAlert2" source-edit-deps="angular.js angular-animate.js script.js" source-edit-html="index.html-1116" source-edit-css="" source-edit-js="script.js-1117" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-0" ng-html-wrap-loaded="sampleAlert2 angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-0">
+<pre class="prettyprint linenums" ng-set-text="index.html-1116" ng-html-wrap-loaded="sampleAlert2 angular.js angular-animate.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1116">
   <div ng-controller="SampleCtrl as vm" class="row">
     <div class="col-sm-4">
       <a class="btn btn-default btn-block" ng-show="!vm.show" ng-click="vm.show = true">Show Alert</a>
@@ -97,9 +97,9 @@
 </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-1"></pre>
-<script type="text/ng-template" id="script.js-1">
-  angular.module('sampleAlert2', ['xos.uiComponents'])
+<pre class="prettyprint linenums" ng-set-text="script.js-1117"></pre>
+<script type="text/ng-template" id="script.js-1117">
+  angular.module('sampleAlert2', ['xos.uiComponents', 'ngAnimate'])
   .controller('SampleCtrl', function(){
     this.config1 = {
       type: 'success'
@@ -109,7 +109,7 @@
   });
 </script>
 </div>
-</div><h4 id="example_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleAlert2" ng-set-html="index.html-0" ng-eval-javascript="script.js-1"></div>
+</div><div class="pull-right"> <button class="btn btn-primary" ng-click="animationsOff=true" ng-hide="animationsOff">Animations on</button> <button class="btn btn-primary disabled" ng-click="animationsOff=false" ng-show="animationsOff">Animations off</button></div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-class="{'animations-off':animationsOff == true}" ng-embed-app="sampleAlert2" ng-set-html="index.html-1116" ng-eval-javascript="script.js-1117"></div>
 </div></div>
 </div>

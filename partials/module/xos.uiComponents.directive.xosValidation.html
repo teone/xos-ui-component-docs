@@ -1,0 +1,77 @@
+<h1><code ng:non-bindable="">xosValidation</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xosvalidation-page"><p>The xos-validation directive</p>
+</div></div>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;xos-validation
+       errors="{Object}"&gt;
+&lt;/xos-validation&gt;</pre>
+<h3 id="usage_directive-info">Directive info</h3>
+<div class="directive-info"><ul><li>This directive creates new scope.</li>
+</ul>
+</div>
+<h4 id="usage_directive-info_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>errors</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xosvalidation-page"><p>The error object</p>
+</div></td></tr></tbody></table></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xosvalidation-page"><h4 id="example_source">Source</h4>
+<div source-edit="sampleValidation" source-edit-deps="angular.js script.js" source-edit-html="index.html-1128" source-edit-css="" source-edit-js="script.js-1129" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-1128" ng-html-wrap-loaded="sampleValidation angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1128">
+  <div ng-controller="SampleCtrl as vm">
+    <div class="row">
+      <div class="col-xs-12">
+        <label>Set an error type:</label>
+      </div>
+      <div class="col-xs-2">
+        <a class="btn"
+          ng-click="vm.errors.required = !vm.errors.required"
+          ng-class="{'btn-default': !vm.errors.required, 'btn-success': vm.errors.required}">
+          Required
+        </a>
+      </div>
+      <div class="col-xs-2">
+        <a class="btn"
+          ng-click="vm.errors.email = !vm.errors.email"
+          ng-class="{'btn-default': !vm.errors.email, 'btn-success': vm.errors.email}">
+          Email
+        </a>
+      </div>
+      <div class="col-xs-2">
+        <a class="btn"
+          ng-click="vm.errors.minlength = !vm.errors.minlength"
+          ng-class="{'btn-default': !vm.errors.minlength, 'btn-success': vm.errors.minlength}">
+          Min Length
+        </a>
+      </div>
+      <div class="col-xs-2">
+        <a class="btn"
+          ng-click="vm.errors.maxlength = !vm.errors.maxlength"
+          ng-class="{'btn-default': !vm.errors.maxlength, 'btn-success': vm.errors.maxlength}">
+          Max Length
+        </a>
+      </div>
+    </div>
+    <xos-validation errors="vm.errors"></xos-validation>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-1129"></pre>
+<script type="text/ng-template" id="script.js-1129">
+  angular.module('sampleValidation', ['xos.uiComponents'])
+  .controller('SampleCtrl', function(){
+    this.errors = {
+      email: false
+    }
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleValidation" ng-set-html="index.html-1128" ng-eval-javascript="script.js-1129"></div>
+</div></div>
+</div>
