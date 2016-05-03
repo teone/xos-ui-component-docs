@@ -1,0 +1,78 @@
+<h1><code ng:non-bindable="">xosSmartPie</code>
+<div><span class="hint">directive in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmartpie-page"><p>The xos-table directive</p>
+</div></div>
+<h2 id="usage">Usage</h2>
+<div class="usage">as element:<pre class="prettyprint linenums">&lt;xos-smart-pie
+       config="{Object}"&gt;
+&lt;/xos-smart-pie&gt;</pre>
+<h3 id="usage_directive-info">Directive info</h3>
+<div class="directive-info"><ul><li>This directive creates new scope.</li>
+</ul>
+</div>
+<h4 id="usage_directive-info_parameters">Parameters</h4><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>config</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmartpie-page"><p>The configuration for the component,
+it is composed by the name of an angular <a href="https://docs.angularjs.org/api/ngResource/service/$resource">$resource</a>
+and a field name that is used to group the data.</p>
+<pre><code>{
+        resource: &#39;Users&#39;,
+        groupBy: &#39;fieldName&#39;,
+        classes: &#39;my-custom-class&#39;,
+        labelFormatter: (labels) =&gt; {
+          // here you can format your label,
+          // you should return an array with the same order
+          return labels;
+        }
+      }
+</code></pre></div></td></tr></tbody></table></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmartpie-page"><h4 id="example_source">Source</h4>
+<div source-edit="sampleSmartPie" source-edit-deps="angular.js script.js" source-edit-html="index.html-248" source-edit-css="" source-edit-js="script.js-249" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-248" ng-html-wrap-loaded="sampleSmartPie angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-248">
+   <div ng-controller="SampleCtrl as vm">
+     <xos-smart-pie config="vm.config"></xos-smart-pie>
+   </div>
+ </script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-249"></pre>
+<script type="text/ng-template" id="script.js-249">
+   angular.module('sampleSmartPie', ['xos.uiComponents', 'ngResource', 'ngMockE2E'])
+   // This is only for documentation purpose
+   .run(function($httpBackend, _){
+     let datas = [
+       {id: 1, first_name: 'Jon', last_name: 'Snow', category: 1},
+       {id: 2, first_name: 'Danaerys', last_name: 'Targaryen', category: 2},
+       {id: 3, first_name: 'Aria', last_name: 'Stark', category: 1}
+     ];
+
+     $httpBackend.whenGET('/test').respond(200, datas)
+   })
+   .factory('_', function($window){
+     return $window._;
+   })
+   .service('SampleResource', function($resource){
+     return $resource('/test/:id', {id: '@id'});
+   })
+   // End of documentation purpose, example start
+   .controller('SampleCtrl', function(){
+     this.config = {
+       resource: 'SampleResource',
+       groupBy: 'category',
+       labelFormatter: (labels) => {
+         console.log('invoked', labels);
+         return labels.map(l => l === '1' ? 'North' : 'Dragon');
+       }
+     };
+   });
+ </script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPie" ng-set-html="index.html-248" ng-eval-javascript="script.js-249"></div>
+</div></div>
+</div>

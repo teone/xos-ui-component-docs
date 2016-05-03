@@ -78,6 +78,15 @@ NG_DOCS={
     },
     {
       "section": "module",
+      "id": "xos.uiComponents.directive:xosSmartPie",
+      "shortName": "xosSmartPie",
+      "type": "directive",
+      "moduleName": "xos.uiComponents",
+      "shortDescription": "The xos-table directive",
+      "keywords": "$httpbackend $resource $window angular angularjs aria array category classes component composed config configuration console controller danaerys data datas directive documentation dragon example factory field fieldname first_name format function group groupby html invoked jon js label labelformatter labels last_name log map module my-custom-class ng-controller ngmocke2e ngresource north order org purpose resource respond return samplectrl sampleresource samplesmartpie script service snow stark start targaryen uicomponents users vm whenget xos xos-table"
+    },
+    {
+      "section": "module",
       "id": "xos.uiComponents.directive:xosSmartTable",
       "shortName": "xosSmartTable",
       "type": "directive",
@@ -105,12 +114,66 @@ NG_DOCS={
     },
     {
       "section": "rest-api",
+      "id": "xos.helpers.Deployments",
+      "shortName": "xos.helpers.Deployments",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/core/deployments/:id/",
+      "keywords": "angular deployments fetch helpers resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
+      "id": "xos.helpers.Example-Services-Collection",
+      "shortName": "xos.helpers.Example-Services-Collection",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/service/exampleservice/",
+      "keywords": "angular example-services-collection fetch helpers resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
+      "id": "xos.helpers.Flavors",
+      "shortName": "xos.helpers.Flavors",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/core/flavors/:id/",
+      "keywords": "angular fetch flavors helpers resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
       "id": "xos.helpers.Instances",
       "shortName": "xos.helpers.Instances",
       "type": "service",
       "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/core/instances/:instance_id/",
+      "shortDescription": "Angular resource to fetch /api/core/instances/:id/",
       "keywords": "angular fetch helpers instances resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
+      "id": "xos.helpers.Login",
+      "shortName": "xos.helpers.Login",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/utility/login/",
+      "keywords": "angular fetch helpers login resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
+      "id": "xos.helpers.Logout",
+      "shortName": "xos.helpers.Logout",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/utility/logout/",
+      "keywords": "angular fetch helpers logout resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
+      "id": "xos.helpers.Nodes",
+      "shortName": "xos.helpers.Nodes",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/core/nodes/:id/",
+      "keywords": "angular fetch helpers nodes resource rest-api service xos"
     },
     {
       "section": "rest-api",
@@ -132,57 +195,21 @@ NG_DOCS={
     },
     {
       "section": "rest-api",
-      "id": "xos.helpers.Subscriber-features",
-      "shortName": "xos.helpers.Subscriber-features",
+      "id": "xos.helpers.Sites",
+      "shortName": "xos.helpers.Sites",
       "type": "service",
       "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/features/",
-      "keywords": "angular fetch helpers resource rest-api service subscriber-features xos"
+      "shortDescription": "Angular resource to fetch /api/core/sites/:id/",
+      "keywords": "angular fetch helpers resource rest-api service sites xos"
     },
     {
       "section": "rest-api",
-      "id": "xos.helpers.Subscriber-features-cdn",
-      "shortName": "xos.helpers.Subscriber-features-cdn",
+      "id": "xos.helpers.Slices",
+      "shortName": "xos.helpers.Slices",
       "type": "service",
       "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/features/cdn/",
-      "keywords": "angular fetch helpers resource rest-api service subscriber-features-cdn xos"
-    },
-    {
-      "section": "rest-api",
-      "id": "xos.helpers.Subscriber-features-downlink_speed",
-      "shortName": "xos.helpers.Subscriber-features-downlink_speed",
-      "type": "service",
-      "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/features/downlink_speed/",
-      "keywords": "angular fetch helpers resource rest-api service subscriber-features-downlink_speed xos"
-    },
-    {
-      "section": "rest-api",
-      "id": "xos.helpers.Subscriber-features-status",
-      "shortName": "xos.helpers.Subscriber-features-status",
-      "type": "service",
-      "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/features/status/",
-      "keywords": "angular fetch helpers resource rest-api service subscriber-features-status xos"
-    },
-    {
-      "section": "rest-api",
-      "id": "xos.helpers.Subscriber-features-uplink_speed",
-      "shortName": "xos.helpers.Subscriber-features-uplink_speed",
-      "type": "service",
-      "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/features/uplink_speed/",
-      "keywords": "angular fetch helpers resource rest-api service subscriber-features-uplink_speed xos"
-    },
-    {
-      "section": "rest-api",
-      "id": "xos.helpers.Subscriber-features-uverse",
-      "shortName": "xos.helpers.Subscriber-features-uverse",
-      "type": "service",
-      "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/features/uverse/",
-      "keywords": "angular fetch helpers resource rest-api service subscriber-features-uverse xos"
+      "shortDescription": "Angular resource to fetch /api/core/slices/:id/",
+      "keywords": "angular fetch helpers resource rest-api service slices xos"
     },
     {
       "section": "rest-api",
@@ -190,8 +217,8 @@ NG_DOCS={
       "shortName": "xos.helpers.Subscribers",
       "type": "service",
       "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/tenant/cord/subscriber/:subscriber_id/",
-      "keywords": "angular fetch helpers resource rest-api service subscribers xos"
+      "shortDescription": "Angular resource to fetch Subscribers",
+      "keywords": "angular fetch helpers method read-subscriber-cdn read-subscriber-downlink_speed read-subscriber-status read-subscriber-uplink_speed read-subscriber-uverse resource rest-api service subscribers update-subscriber-cdn update-subscriber-downlink_speed update-subscriber-status update-subscriber-uplink_speed update-subscriber-uverse view-a-subscriber-features-detail xos"
     },
     {
       "section": "rest-api",
@@ -208,7 +235,7 @@ NG_DOCS={
       "shortName": "xos.helpers.Users",
       "type": "service",
       "moduleName": "xos.helpers",
-      "shortDescription": "Angular resource to fetch /api/core/users/:user_id/",
+      "shortDescription": "Angular resource to fetch /api/core/users/:id/",
       "keywords": "angular fetch helpers resource rest-api service users xos"
     },
     {
@@ -241,12 +268,8 @@ NG_DOCS={
       "js/angular.min.js",
       "js/angular-animate.min.js",
       "js/marked.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-cookies.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-resource.js",
       "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-mocks.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.js",
+      "../xos/core/xoslib/static/js/vendor/ngXosVendor.js",
       "../xos/core/xoslib/static/js/vendor/ngXosHelpers.js"
     ],
     "styles": [
@@ -272,12 +295,8 @@ NG_DOCS={
     "js/angular.min.js",
     "js/angular-animate.min.js",
     "js/marked.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-animate.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-cookies.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-resource.js",
     "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-mocks.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.js",
+    "../xos/core/xoslib/static/js/vendor/ngXosVendor.js",
     "../xos/core/xoslib/static/js/vendor/ngXosHelpers.js"
   ]
 };
