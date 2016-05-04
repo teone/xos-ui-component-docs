@@ -83,7 +83,7 @@ NG_DOCS={
       "type": "directive",
       "moduleName": "xos.uiComponents",
       "shortDescription": "The xos-table directive",
-      "keywords": "$httpbackend $resource $window angular angularjs aria array category classes component composed config configuration console controller danaerys data datas directive documentation dragon example factory field fieldname first_name format function group groupby html invoked jon js label labelformatter labels last_name log map module my-custom-class ng-controller ngmocke2e ngresource north order org purpose resource respond return samplectrl sampleresource samplesmartpie script service snow stark start targaryen uicomponents users vm whenget xos xos-table"
+      "keywords": "$httpbackend $resource $timeout $window aaa active angular angularjs api aria array assign backend backendpoll banned category classes component composed config configlocal configuration controller danaerys data datas directive directly displaying dragon factory fetching field fieldname first_name format function group groupby headers html jon js label labelformatter labels lannister last_name local map mock module my-custom-class ng-controller ngdoc ngmocke2e ngresource north order org params poll polling random resource respond return round samplectrl samplectrllocal sampleresource samplesmartpielocal samplesmartpiepoll samplesmartpieresource script service snow stark targaryen triggered tyrion uicomponents url users vm whenget xos xos-table"
     },
     {
       "section": "module",
