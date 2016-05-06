@@ -31,18 +31,18 @@ and a field name that is used to group the data.</p>
 <h2 id="example">Example</h2>
 <div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xossmartpie-page"><p>Displaying Local data</p>
 <h4 id="example_source">Source</h4>
-<div source-edit="sampleSmartPieLocal" source-edit-deps="angular.js script.js" source-edit-html="index.html-834" source-edit-css="" source-edit-js="script.js-835" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleSmartPieLocal" source-edit-deps="angular.js script.js" source-edit-html="index.html-1164" source-edit-css="" source-edit-js="script.js-1165" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-834" ng-html-wrap-loaded="sampleSmartPieLocal angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-834">
+<pre class="prettyprint linenums" ng-set-text="index.html-1164" ng-html-wrap-loaded="sampleSmartPieLocal angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1164">
     <div ng-controller="SampleCtrlLocal as vm">
       <xos-smart-pie config="vm.configLocal"></xos-smart-pie>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-835"></pre>
-<script type="text/ng-template" id="script.js-835">
+<pre class="prettyprint linenums" ng-set-text="script.js-1165"></pre>
+<script type="text/ng-template" id="script.js-1165">
     angular.module('sampleSmartPieLocal', ['xos.uiComponents'])
     .factory('_', function($window){
       return $window._;
@@ -73,21 +73,21 @@ and a field name that is used to group the data.</p>
   </script>
 </div>
 </div><h4 id="example_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPieLocal" ng-set-html="index.html-834" ng-eval-javascript="script.js-835"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPieLocal" ng-set-html="index.html-1164" ng-eval-javascript="script.js-1165"></div>
 <p>Fetching data from API</p>
 <h4 id="example_source">Source</h4>
-<div source-edit="sampleSmartPieResource" source-edit-deps="angular.js script.js backendPoll.js" source-edit-html="index.html-836" source-edit-css="" source-edit-js="script.js-837 backendPoll.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleSmartPieResource" source-edit-deps="angular.js script.js backendPoll.js" source-edit-html="index.html-1166" source-edit-css="" source-edit-js="script.js-1167 backendPoll.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-836" ng-html-wrap-loaded="sampleSmartPieResource angular.js script.js backendPoll.js"></pre>
-<script type="text/ng-template" id="index.html-836">
+<pre class="prettyprint linenums" ng-set-text="index.html-1166" ng-html-wrap-loaded="sampleSmartPieResource angular.js script.js backendPoll.js"></pre>
+<script type="text/ng-template" id="index.html-1166">
     <div ng-controller="SampleCtrl as vm">
       <xos-smart-pie config="vm.config"></xos-smart-pie>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-837"></pre>
-<script type="text/ng-template" id="script.js-837">
+<pre class="prettyprint linenums" ng-set-text="script.js-1167"></pre>
+<script type="text/ng-template" id="script.js-1167">
     angular.module('sampleSmartPieResource', ['xos.uiComponents', 'ngResource', 'ngMockE2E'])
     .controller('SampleCtrl', function(){
       this.config = {
@@ -123,21 +123,21 @@ and a field name that is used to group the data.</p>
   </script>
 </div>
 </div><h4 id="example_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPieResource" ng-set-html="index.html-836" ng-eval-javascript="script.js-837 backendPoll.js"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPieResource" ng-set-html="index.html-1166" ng-eval-javascript="script.js-1167 backendPoll.js"></div>
 <p>Polling data from API</p>
 <h4 id="example_source">Source</h4>
-<div source-edit="sampleSmartPiePoll" source-edit-deps="angular.js script.js backend.js" source-edit-html="index.html-838" source-edit-css="" source-edit-js="script.js-839 backend.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleSmartPiePoll" source-edit-deps="angular.js script.js backend.js" source-edit-html="index.html-1168" source-edit-css="" source-edit-js="script.js-1169 backend.js" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-838" ng-html-wrap-loaded="sampleSmartPiePoll angular.js script.js backend.js"></pre>
-<script type="text/ng-template" id="index.html-838">
+<pre class="prettyprint linenums" ng-set-text="index.html-1168" ng-html-wrap-loaded="sampleSmartPiePoll angular.js script.js backend.js"></pre>
+<script type="text/ng-template" id="index.html-1168">
     <div ng-controller="SampleCtrl as vm">
       <xos-smart-pie config="vm.config"></xos-smart-pie>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-839"></pre>
-<script type="text/ng-template" id="script.js-839">
+<pre class="prettyprint linenums" ng-set-text="script.js-1169"></pre>
+<script type="text/ng-template" id="script.js-1169">
     angular.module('sampleSmartPiePoll', ['xos.uiComponents', 'ngResource', 'ngMockE2E'])
     .controller('SampleCtrl', function(){
       this.config = {
@@ -191,6 +191,6 @@ and a field name that is used to group the data.</p>
   </script>
 </div>
 </div><h4 id="example_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPiePoll" ng-set-html="index.html-838" ng-eval-javascript="script.js-839 backend.js"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleSmartPiePoll" ng-set-html="index.html-1168" ng-eval-javascript="script.js-1169 backend.js"></div>
 </div></div>
 </div>

@@ -101,7 +101,7 @@ NG_DOCS={
       "type": "directive",
       "moduleName": "xos.uiComponents",
       "shortDescription": "The xos-table directive",
-      "keywords": "action actions add angular animations array arrows bootstraps callback cb clarkson classes color column columns component config configuration console controller data default defined delete directive doe feeded fereydoun field filter full fulltext function gili glyphicon html human icon icons john js label lastname log lucky model module ng-controller nganimate object order ordering pagesize pagination prop property read readable receive red refers remove rendered samplectrl1 samplectrl2 samplectrl3 sampletable1 sampletable2 sampletable3 script spalding table table-bordered table-condensed table-striped tate title true uicomponents vm xos xos-table"
+      "keywords": "$window action actions add angular animations array arrows basic bootstraps callback cb cdn cdnenabled clarkson classes color column columns component config configuration console controller custom data default defined delete directive disabled doe downlink downlink_speed enabled factory false features feeded fereydoun field filter filtering formatter full fulltext function gili glyphicon html human icon icons john js label lastname log lucky model module ng-controller nganimate object order ordering pagesize pagination prop property read readable receive red refers remove rendered return samplectrl samplectrl1 samplectrl2 samplectrl3 sampletable1 sampletable2 sampletable3 sampletable4 script spalding speed status table table-bordered table-condensed table-striped tate title true type uicomponents uplink uplink_speed usage username uverse val vm xos xos-table"
     },
     {
       "section": "module",
