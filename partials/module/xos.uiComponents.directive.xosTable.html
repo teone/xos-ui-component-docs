@@ -42,18 +42,18 @@
 <h2 id="example">Example</h2>
 <div class="example"><div class="xos-uicomponents-directive-page xos-uicomponents-directive-xostable-page"><h3 id="basic-usage" id="example_basic-usage">Basic usage</h3>
 <h4 id="example_basic-usage_source">Source</h4>
-<div source-edit="sampleTable1" source-edit-deps="angular.js script.js" source-edit-html="index.html-1364" source-edit-css="" source-edit-js="script.js-1365" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleTable1" source-edit-deps="angular.js script.js" source-edit-html="index.html-1960" source-edit-css="" source-edit-js="script.js-1961" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-1364" ng-html-wrap-loaded="sampleTable1 angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-1364">
+<pre class="prettyprint linenums" ng-set-text="index.html-1960" ng-html-wrap-loaded="sampleTable1 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1960">
     <div ng-controller="SampleCtrl1 as vm">
       <xos-table data="vm.data" config="vm.config"></xos-table>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-1365"></pre>
-<script type="text/ng-template" id="script.js-1365">
+<pre class="prettyprint linenums" ng-set-text="script.js-1961"></pre>
+<script type="text/ng-template" id="script.js-1961">
     angular.module('sampleTable1', ['xos.uiComponents'])
     .factory('_', function($window){
       return $window._;
@@ -86,21 +86,21 @@
   </script>
 </div>
 </div><h4 id="example_basic-usage_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleTable1" ng-set-html="index.html-1364" ng-eval-javascript="script.js-1365"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable1" ng-set-html="index.html-1960" ng-eval-javascript="script.js-1961"></div>
 <h3 id="filtering" id="example_filtering">Filtering</h3>
 <h4 id="example_filtering_source">Source</h4>
-<div source-edit="sampleTable2" source-edit-deps="angular.js angular-animate.js script.js" source-edit-html="index.html-1366" source-edit-css="" source-edit-js="script.js-1367" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleTable2" source-edit-deps="angular.js angular-animate.js script.js" source-edit-html="index.html-1962" source-edit-css="" source-edit-js="script.js-1963" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-1366" ng-html-wrap-loaded="sampleTable2 angular.js angular-animate.js script.js"></pre>
-<script type="text/ng-template" id="index.html-1366">
+<pre class="prettyprint linenums" ng-set-text="index.html-1962" ng-html-wrap-loaded="sampleTable2 angular.js angular-animate.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1962">
     <div ng-controller="SampleCtrl2 as vm">
       <xos-table data="vm.data" config="vm.config"></xos-table>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-1367"></pre>
-<script type="text/ng-template" id="script.js-1367">
+<pre class="prettyprint linenums" ng-set-text="script.js-1963"></pre>
+<script type="text/ng-template" id="script.js-1963">
     angular.module('sampleTable2', ['xos.uiComponents', 'ngAnimate'])
     .factory('_', function($window){
       return $window._;
@@ -146,21 +146,21 @@
   </script>
 </div>
 </div><div class="pull-right"> <button class="btn btn-primary" ng-click="animationsOff=true" ng-hide="animationsOff">Animations on</button> <button class="btn btn-primary disabled" ng-click="animationsOff=false" ng-show="animationsOff">Animations off</button></div><h4 id="example_filtering_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-class="{'animations-off':animationsOff == true}" ng-embed-app="sampleTable2" ng-set-html="index.html-1366" ng-eval-javascript="script.js-1367"></div>
+<div class="well doc-example-live animate-container" ng-class="{'animations-off':animationsOff == true}" ng-embed-app="sampleTable2" ng-set-html="index.html-1962" ng-eval-javascript="script.js-1963"></div>
 <h3 id="pagination" id="example_pagination">Pagination</h3>
 <h4 id="example_pagination_source">Source</h4>
-<div source-edit="sampleTable3" source-edit-deps="angular.js script.js" source-edit-html="index.html-1368" source-edit-css="" source-edit-js="script.js-1369" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleTable3" source-edit-deps="angular.js script.js" source-edit-html="index.html-1964" source-edit-css="" source-edit-js="script.js-1965" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-1368" ng-html-wrap-loaded="sampleTable3 angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-1368">
+<pre class="prettyprint linenums" ng-set-text="index.html-1964" ng-html-wrap-loaded="sampleTable3 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1964">
     <div ng-controller="SampleCtrl3 as vm">
       <xos-table data="vm.data" config="vm.config"></xos-table>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-1369"></pre>
-<script type="text/ng-template" id="script.js-1369">
+<pre class="prettyprint linenums" ng-set-text="script.js-1965"></pre>
+<script type="text/ng-template" id="script.js-1965">
     angular.module('sampleTable3', ['xos.uiComponents'])
     .factory('_', function($window){
       return $window._;
@@ -204,21 +204,21 @@
   </script>
 </div>
 </div><h4 id="example_pagination_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleTable3" ng-set-html="index.html-1368" ng-eval-javascript="script.js-1369"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable3" ng-set-html="index.html-1964" ng-eval-javascript="script.js-1965"></div>
 <h3 id="field-formatter" id="example_field-formatter">Field formatter</h3>
 <h4 id="example_field-formatter_source">Source</h4>
-<div source-edit="sampleTable4" source-edit-deps="angular.js script.js" source-edit-html="index.html-1370" source-edit-css="" source-edit-js="script.js-1371" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleTable4" source-edit-deps="angular.js script.js" source-edit-html="index.html-1966" source-edit-css="" source-edit-js="script.js-1967" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-1370" ng-html-wrap-loaded="sampleTable4 angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-1370">
+<pre class="prettyprint linenums" ng-set-text="index.html-1966" ng-html-wrap-loaded="sampleTable4 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1966">
     <div ng-controller="SampleCtrl as vm">
       <xos-table data="vm.data" config="vm.config"></xos-table>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-1371"></pre>
-<script type="text/ng-template" id="script.js-1371">
+<pre class="prettyprint linenums" ng-set-text="script.js-1967"></pre>
+<script type="text/ng-template" id="script.js-1967">
     angular.module('sampleTable4', ['xos.uiComponents'])
     .factory('_', function($window){
       return $window._;
@@ -228,7 +228,8 @@
         columns: [
           {
             label: 'First Name',
-            prop: 'name'
+            prop: 'name',
+            link: item => `https://www.google.it/#q=${item.name}`
           },
           {
             label: 'Enabled',
@@ -272,21 +273,21 @@
   </script>
 </div>
 </div><h4 id="example_field-formatter_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleTable4" ng-set-html="index.html-1370" ng-eval-javascript="script.js-1371"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable4" ng-set-html="index.html-1966" ng-eval-javascript="script.js-1967"></div>
 <h3 id="custom-formatter" id="example_custom-formatter">Custom formatter</h3>
 <h4 id="example_custom-formatter_source">Source</h4>
-<div source-edit="sampleTable5" source-edit-deps="angular.js script.js" source-edit-html="index.html-1372" source-edit-css="" source-edit-js="script.js-1373" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div source-edit="sampleTable5" source-edit-deps="angular.js script.js" source-edit-html="index.html-1968" source-edit-css="" source-edit-js="script.js-1969" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-1372" ng-html-wrap-loaded="sampleTable5 angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-1372">
+<pre class="prettyprint linenums" ng-set-text="index.html-1968" ng-html-wrap-loaded="sampleTable5 angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-1968">
     <div ng-controller="SampleCtrl as vm">
       <xos-table data="vm.data" config="vm.config"></xos-table>
     </div>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-1373"></pre>
-<script type="text/ng-template" id="script.js-1373">
+<pre class="prettyprint linenums" ng-set-text="script.js-1969"></pre>
+<script type="text/ng-template" id="script.js-1969">
     angular.module('sampleTable5', ['xos.uiComponents'])
     .factory('_', function($window){
       return $window._;
@@ -341,6 +342,6 @@
   </script>
 </div>
 </div><h4 id="example_custom-formatter_demo">Demo</h4>
-<div class="well doc-example-live animate-container" ng-embed-app="sampleTable5" ng-set-html="index.html-1372" ng-eval-javascript="script.js-1373"></div>
+<div class="well doc-example-live animate-container" ng-embed-app="sampleTable5" ng-set-html="index.html-1968" ng-eval-javascript="script.js-1969"></div>
 </div></div>
 </div>
