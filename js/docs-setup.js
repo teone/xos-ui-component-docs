@@ -33,6 +33,15 @@ NG_DOCS={
     },
     {
       "section": "module",
+      "id": "xos.helpers.ServiceGraph",
+      "shortName": "xos.helpers.ServiceGraph",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "This factory define a set of helper function to query the service tenancy graph",
+      "keywords": "define factory function graph helper helpers module query service servicegraph set tenancy xos"
+    },
+    {
+      "section": "module",
       "id": "xos.helpers.SetCSRFToken",
       "shortName": "xos.helpers.SetCSRFToken",
       "type": "service",
@@ -101,7 +110,7 @@ NG_DOCS={
       "type": "directive",
       "moduleName": "xos.uiComponents",
       "shortDescription": "The xos-table directive",
-      "keywords": "$window action actions add angular animations array arrows basic boolean bootstraps c_tag cache callback cb cdn cdnenabled clarkson classes color column columns component config configuration console controller custom data default defined delete details directive disabled doe downlink downlink_speed enabled factory false features feeded fereydoun field filter filtering formatter full fulltext function gili glyphicon google html https human icon icons iptv item john js label lastname link log lucky model module ng-controller nganimate object order ordering pagesize pagination prop property read readable receive red refers remove rendered return s_tag samplectrl samplectrl1 samplectrl2 samplectrl3 sampletable1 sampletable2 sampletable3 sampletable4 sampletable5 script services spalding speed status table table-bordered table-condensed table-striped tate title true type uicomponents uplink uplink_speed usage username uverse val vm xos xos-table"
+      "keywords": "$window action actions add angular animations array arrows basic boolean bootstraps c_tag cache callback cb cdn cdnenabled clarkson classes color column columns component config configuration console controller custom data default defined delete details directive disabled doe downlink downlink_speed enabled factory false features feeded fereydoun field filter filtering fn formatter full fulltext function gili glyphicon google html https human icon icons iptv item john js label lastname link log lucky model module ng-controller nganimate object optional order ordering pagesize pagination prop property read readable receive red refers remove rendered return s_tag samplectrl samplectrl1 samplectrl2 samplectrl3 sampletable1 sampletable2 sampletable3 sampletable4 sampletable5 script services spalding speed status string table table-bordered table-condensed table-striped tate tipe title true type uicomponents uplink uplink_speed url usage username uverse val vm xos xos-table"
     },
     {
       "section": "module",
@@ -168,6 +177,15 @@ NG_DOCS={
     },
     {
       "section": "rest-api",
+      "id": "xos.helpers.Networks",
+      "shortName": "xos.helpers.Networks",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/core/networks/:id/",
+      "keywords": "angular fetch helpers networks resource rest-api service xos"
+    },
+    {
+      "section": "rest-api",
       "id": "xos.helpers.Nodes",
       "shortName": "xos.helpers.Nodes",
       "type": "service",
@@ -195,6 +213,15 @@ NG_DOCS={
     },
     {
       "section": "rest-api",
+      "id": "xos.helpers.Services",
+      "shortName": "xos.helpers.Services",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/core/services/:id/",
+      "keywords": "angular fetch helpers resource rest-api service services xos"
+    },
+    {
+      "section": "rest-api",
       "id": "xos.helpers.Sites",
       "shortName": "xos.helpers.Sites",
       "type": "service",
@@ -213,12 +240,30 @@ NG_DOCS={
     },
     {
       "section": "rest-api",
+      "id": "xos.helpers.SlicesPlus",
+      "shortName": "xos.helpers.SlicesPlus",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/utility/slicesplus/",
+      "keywords": "angular api currently fetch helpers method query read-only resource rest-api service slicesplus supported xos"
+    },
+    {
+      "section": "rest-api",
       "id": "xos.helpers.Subscribers",
       "shortName": "xos.helpers.Subscribers",
       "type": "service",
       "moduleName": "xos.helpers",
       "shortDescription": "Angular resource to fetch Subscribers",
       "keywords": "angular fetch helpers method read-subscriber-cdn read-subscriber-downlink_speed read-subscriber-status read-subscriber-uplink_speed read-subscriber-uverse resource rest-api service subscribers update-subscriber-cdn update-subscriber-downlink_speed update-subscriber-status update-subscriber-uplink_speed update-subscriber-uverse view-a-subscriber-features-detail xos"
+    },
+    {
+      "section": "rest-api",
+      "id": "xos.helpers.Tenant",
+      "shortName": "xos.helpers.Tenant",
+      "type": "service",
+      "moduleName": "xos.helpers",
+      "shortDescription": "Angular resource to fetch /api/core/tenant/:id/",
+      "keywords": "angular fetch helpers resource rest-api service tenant xos"
     },
     {
       "section": "rest-api",
