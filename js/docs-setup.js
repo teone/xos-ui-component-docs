@@ -146,7 +146,7 @@ NG_DOCS={
       "type": "directive",
       "moduleName": "xos.uiComponents",
       "shortDescription": "The xos-validation directive",
-      "keywords": "angular btn btn-default btn-success class col-xs-12 col-xs-2 controller directive email error errors false function html js length max maxlength min minlength module ng-class ng-click ng-controller object required row samplectrl samplevalidation script type uicomponents vm xos xos-validation"
+      "keywords": "$error $submitted angular btn btn-default btn-success class col-xs-12 col-xs-2 controller directive email error errors field form function html js length max maxlength min minlength module ng-class ng-click ng-controller object required row samplectrl samplevalidation script type uicomponents vm xos xos-validation"
     },
     {
       "section": "module",
