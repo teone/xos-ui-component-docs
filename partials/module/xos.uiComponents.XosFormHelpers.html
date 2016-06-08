@@ -1,0 +1,58 @@
+<h1><code ng:non-bindable="">XosFormHelpers</code>
+<div><span class="hint">service in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/module/xos.uiComponents.LabelFormatter">LabelFormatter</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/module/xos.helpers._">_</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods__getfieldformat">_getFieldFormat(value)</h3>
+<div class="_getfieldformat"><div class="xos-uicomponents-xosformhelpers-getfieldformat-page"><p>Return the type of the input</p>
+</div><h5 id="methods__getfieldformat_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>value</td><td><a href="" class="label type-hint type-hint-mixed">mixed</a></td><td><div class="xos-uicomponents-xosformhelpers-getfieldformat-page"><p>The data to be evaluated</p>
+</div></td></tr></tbody></table><h5 id="methods__getfieldformat_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="xos-uicomponents-xosformhelpers-getfieldformat-page"><p>The type of the input</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods__isemail">_isEmail(text)</h3>
+<div class="_isemail"><div class="xos-uicomponents-xosformhelpers-isemail-page"><p>Return true if the string is an email address</p>
+</div><h5 id="methods__isemail_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>text</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="xos-uicomponents-xosformhelpers-isemail-page"><p>The string to be evaluated</p>
+</div></td></tr></tbody></table><h5 id="methods__isemail_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="xos-uicomponents-xosformhelpers-isemail-page"><p>If the string match an email format</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_buildformstructure">buildFormStructure(modelField, customField, model)</h3>
+<div class="buildformstructure"><div class="xos-uicomponents-xosformhelpers-buildformstructure-page"><p>Return the type of the input</p>
+</div><h5 id="methods_buildformstructure_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>modelField</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-uicomponents-xosformhelpers-buildformstructure-page"><p>An object containing one property for each field of the model</p>
+</div></td></tr><tr><td>customField</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-uicomponents-xosformhelpers-buildformstructure-page"><p>An object containing one property for each field custom field</p>
+</div></td></tr><tr><td>model</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-uicomponents-xosformhelpers-buildformstructure-page"><p>The actual model on wich build the form structure (it is used to determine the type of the input)</p>
+</div></td></tr></tbody></table><h5 id="methods_buildformstructure_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-uicomponents-xosformhelpers-buildformstructure-page"><p>An object describing the form structure in the form of:</p>
+<pre><code>{
+  &#39;field-name&#39;: {
+    label: &#39;Label&#39;,
+    type: &#39;number&#39;, //typeof field
+    validators: {}, // see xosForm for more details
+    hint: &#39;A Custom hint for the field&#39;
+  }
+}
+</code></pre></div></td></tr></table></div>
+</li>
+<li><h3 id="methods_parsemodelfield">parseModelField(fields)</h3>
+<div class="parsemodelfield"><div class="xos-uicomponents-xosformhelpers-parsemodelfield-page"><p>Helpers for buildFormStructure, convert a list of model properties in an object used to build the form structure, eg:</p>
+<pre><code>// input:
+[&#39;id&#39;, &#39;name&#39;m &#39;mail&#39;]
+
+// output
+{
+  id: {},
+  name: {},
+  mail: {}
+}
+</code></pre></div><h5 id="methods_parsemodelfield_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>fields</td><td><a href="" class="label type-hint type-hint-array">array</a></td><td><div class="xos-uicomponents-xosformhelpers-parsemodelfield-page"><p>An array of fields representing the model properties</p>
+</div></td></tr></tbody></table><h5 id="methods_parsemodelfield_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-uicomponents-xosformhelpers-parsemodelfield-page"><p>An object containing one property for each field of the model</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

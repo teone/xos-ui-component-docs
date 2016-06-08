@@ -1,0 +1,44 @@
+<h1><code ng:non-bindable="">XosUserPrefs</code>
+<div><span class="hint">service in module <code ng:non-bindable="">xos.helpers</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-helpers-xosuserprefs-page"><p>This service is used to store the user preferences in cookies, so that they survive to page changes.
+The structure of the user preference is:</p>
+<pre><code>{
+  synchronizers: {
+    notification: {
+      &#39;volt&#39;: boolean,
+      &#39;openstack&#39;: boolean,
+      ...
+    }
+  }
+}
+</code></pre></div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_getall">getAll()</h3>
+<div class="getall"><div class="xos-helpers-xosuserprefs-getall-page"><p>Return all the user preferences stored in cookies</p>
+</div><h5 id="methods_getall_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-helpers-xosuserprefs-getall-page"><p>The user preferences</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getsynchronizernotificationstatus">getSynchronizerNotificationStatus(prefs)</h3>
+<div class="getsynchronizernotificationstatus"><div class="xos-helpers-xosuserprefs-getsynchronizernotificationstatus-page"><p>Return the synchronizer notification status, if name is not provided return the status for all synchronizers</p>
+</div><h5 id="methods_getsynchronizernotificationstatus_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>prefs <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="xos-helpers-xosuserprefs-getsynchronizernotificationstatus-page"><p>The synchronizer name</p>
+</div></td></tr></tbody></table><h5 id="methods_getsynchronizernotificationstatus_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object | string</a></td><td><div class="xos-helpers-xosuserprefs-getsynchronizernotificationstatus-page"><p>The synchronizer status</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_setall">setAll(prefs)</h3>
+<div class="setall"><div class="xos-helpers-xosuserprefs-setall-page"><p>Override all user preferences</p>
+</div><h5 id="methods_setall_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>prefs</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="xos-helpers-xosuserprefs-setall-page"><p>The user preferences</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_setsynchronizernotificationstatus">setSynchronizerNotificationStatus(name, value)</h3>
+<div class="setsynchronizernotificationstatus"><div class="xos-helpers-xosuserprefs-setsynchronizernotificationstatus-page"><p>Update the notification status for a single synchronizer</p>
+</div><h5 id="methods_setsynchronizernotificationstatus_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>name</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="xos-helpers-xosuserprefs-setsynchronizernotificationstatus-page"><p>The synchronizer name</p>
+</div></td></tr><tr><td>value</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="xos-helpers-xosuserprefs-setsynchronizernotificationstatus-page"><p>The notification status (true means that it has been sent)</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>
