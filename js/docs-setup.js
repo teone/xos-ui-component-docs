@@ -92,7 +92,7 @@ NG_DOCS={
       "type": "directive",
       "moduleName": "xos.uiComponents",
       "shortDescription": "The xos-field directive.",
-      "keywords": "$window active age angular basic boolean boolean-field component configuration controller date-field decide details directive element email email-field example factory field field1 field2 field3 field4 function html input input-name jhon js kind label model module ng-controller ng-model ngmodel number number-field object print recursive return ru sample samplectrl samplefield1 samplefield2 samplefield3 script string true type uicomponents validators values vm wich xos xos-field xosform"
+      "keywords": "$window active age angular another-name bar basic boolean boolean-field component configuration controller date-field decide details directive element email email-field empty example factory field field1 field2 field3 field4 foo foolabel function html input input-name jhon js kind label model model1 model2 module name1 name2 ng-controller ng-model ngmodel number number-field object print properties recursive required return ru sample samplectrl samplefield1 samplefield2 samplefield3 script string true type uicomponents validators values vm wich xos xos-field xosform"
     },
     {
       "section": "module",
