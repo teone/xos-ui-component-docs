@@ -78,6 +78,15 @@ NG_DOCS={
     },
     {
       "section": "module",
+      "id": "xos.uiComponents.Comparator",
+      "shortName": "xos.uiComponents.Comparator",
+      "type": "service",
+      "moduleName": "xos.uiComponents",
+      "shortDescription": "This factory define a function that replace the native angular.filter comparator.",
+      "keywords": "allow angular booleans class col-xs-6 comparation comparator controller data define factory false filter form-control function html inside item jack jhon js mike module native ng-controller ng-model ng-options ng-repeat object query replace return row sample scott script service single status text tipical type uicomponents usage values vm xos"
+    },
+    {
+      "section": "module",
       "id": "xos.uiComponents.directive:xosAlert",
       "shortName": "xosAlert",
       "type": "directive",

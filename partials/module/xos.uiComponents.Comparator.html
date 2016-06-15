@@ -1,0 +1,61 @@
+<h1><code ng:non-bindable="">Comparator</code>
+<div><span class="hint">service in module <code ng:non-bindable="">xos.uiComponents</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="xos-uicomponents-comparator-page"><p>This factory define a function that replace the native angular.filter comparator.</p>
+<p>It is done to allow the comparation between (0|1) values with booleans.</p>
+<blockquote>
+<p>Note that this factory return a single function, not an object.</p>
+</blockquote>
+<p>The tipical usage of this factory is inside an <code>ng-repeat</code></p>
+</div></div>
+<h2 id="example">Example</h2>
+<div class="example"><div class="xos-uicomponents-comparator-page"><h4 id="example_source">Source</h4>
+<div source-edit="comparator" source-edit-deps="angular.js script.js" source-edit-html="index.html-720" source-edit-css="" source-edit-js="script.js-721" source-edit-json="" source-edit-unit="" source-edit-scenario=""></div>
+<div class="tabbable"><div class="tab-pane" title="index.html">
+<pre class="prettyprint linenums" ng-set-text="index.html-720" ng-html-wrap-loaded="comparator angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-720">
+  <div ng-controller="sample as vm">
+    <div class="row">
+      <div class="col-xs-6">
+        <label>Filter by name:</label>
+        <input class="form-control" type="text" ng-model="vm.query.name"/>
+      </div>
+      <div class="col-xs-6">
+        <label>Filter by status:</label>
+        <select
+         ng-model="vm.query.status"
+         ng-options="i for i in [true, false]">
+        </select>
+      </div>
+    </div>
+    <div ng-repeat="item in vm.data | filter:vm.query:vm.comparator">
+      <div class="row">
+        <div class="col-xs-6">{{item.name}}</div>
+        <div class="col-xs-6">{{item.status}}</div>
+      </div>
+    </div>
+  </div>
+</script>
+</div>
+<div class="tab-pane" title="script.js">
+<pre class="prettyprint linenums" ng-set-text="script.js-721"></pre>
+<script type="text/ng-template" id="script.js-721">
+  angular.module('comparator', ['xos.uiComponents'])
+  .controller('sample', function(Comparator){
+    this.comparator = Comparator;
+    this.data = [
+      {name: 'Jhon', status: 1},
+      {name: 'Jack', status: 0},
+      {name: 'Mike', status: 1},
+      {name: 'Scott', status: 0}
+    ];
+  });
+</script>
+</div>
+</div><h4 id="example_demo">Demo</h4>
+<div class="well doc-example-live animate-container" ng-embed-app="comparator" ng-set-html="index.html-720" ng-eval-javascript="script.js-721"></div>
+</div></div>
+</div>
